@@ -1,3 +1,8 @@
+.blocSelectReset{
+    text-align: center;
+    margin: 30px;
+    min-width: 1000px;
+}
 
 .listeArticles{
     display:flex;
@@ -6,11 +11,13 @@
     margin-top: 30px;
 }
 
-.blocSelectReset{
-    text-align: center;
-    margin: 30px;
-}
 
 #select{
     margin-right: 20px;
+}
+
+@media screen and (max-width:1500px){
+    .blocSelectReset{
+        min-width: 200px;
+    }
 }

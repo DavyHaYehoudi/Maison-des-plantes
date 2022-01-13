@@ -2,10 +2,9 @@
     display:flex;
     border-top:3px black solid;
     border-bottom:3px black solid;
-    /* padding: 30px; */
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .conteneur{
         display: block;
        

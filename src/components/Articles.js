@@ -8,6 +8,7 @@ const Articles = () => {
 
     const[selected,setSelected]= useState('Toutes');
 
+
     const handleSelected = (e) => {
         setSelected(e.target.value)
     }
@@ -16,7 +17,7 @@ const Articles = () => {
         setSelected('Toutes')
     }
 
-    
+   
     return (
         <div>
             <div className='blocSelectReset'>
@@ -28,16 +29,17 @@ const Articles = () => {
                 </select>
                 <input type='reset' onClick={handleReset}/>
             </div>
+
             <div className='listeArticles'>
                 {selected==='Toutes' ? 
                 (plantList
                     .map(plant => 
-                        <Cards key={plant.id} plant={plant}/>))
+                        <Cards key={plant.id} plant={plant} />))
                         :
                     (plantList
                         .filter(element => element.category===selected)
                         .map(plant => 
-                        <Cards key={plant.id} plant={plant}/>
+                        <Cards key={plant.id} plant={plant} />
                     ))
                 }
             </div>
